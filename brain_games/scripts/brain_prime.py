@@ -8,6 +8,7 @@ def simple_num(n):
             return False
     return True
 
+
 def main():
     count = 0
     print('Welcome to the Brain Games!')
