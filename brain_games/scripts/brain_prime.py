@@ -1,6 +1,5 @@
 import random
 import prompt
-import math
 
 
 def simple_num(n):
@@ -32,7 +31,7 @@ def main():
             else:
                 print(f"'{answer}' is wrong answer ;(. Correct answer was '{'yes'}'.")
                 print(f"Let's try again, {name}!")
-            break
+            return None
     if count == 3:
         print(f'Congratulations, {name}!')
 
