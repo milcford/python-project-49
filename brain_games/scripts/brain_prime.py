@@ -15,7 +15,7 @@ def main():
     print(f'Hello, {name}')
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while count < 3:
-        num1 = random.randint(1, 100)
+        num1 = random.randint(1, 99)
         print(f'Question: {num1}')
         answer = prompt.string('Your answer: ')
         if answer == 'yes' and simple_num(num1):  # Второе условие проверяет что бы число было простым
