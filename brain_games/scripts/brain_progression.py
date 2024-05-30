@@ -11,8 +11,8 @@ def main():
     print('What number is missing in the progression?')
     while count < 3:
         num1 = random.randint(1, 5) # Случайное число от 1 до 5 включительно
-        num2 = random.randint(6, 50) # Случайное число от 5 до 50 включительно
-        num3 = random.randint(2, 5)
+        num2 = random.randint(15, 50) # Случайное число от 5 до 50 включительно
+        num3 = random.randint(-10, 10)
         num_list = [str(i) for i in range(num1, num2, num3)] # Генерируем список, начальное значение
         num_list2 = num_list.copy()
         question = random.randrange(1, len(num_list2) - 2) # Число длинны списка, выбираем из него рандомное
