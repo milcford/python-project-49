@@ -1,29 +1,18 @@
 import random
-import prompt
-import math
 
 
-def main():
-    count = 0
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print('Find the greatest common divisor of given numbers.')
-    while count < 3:
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
-        print(f'Question: {num1} {num2}')
-        answer = prompt.string('Your answer: ')
-        gcd = math.gcd(num1, num2)
-        if gcd == int(answer):
-            print('Correct!')
-            count += 1
+def generate_game(question, correct_answer):
+    print('Find the greatest common divisor of given numbers.')  # Это должна быть КОНСТАНТА
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    question = f'{num1} {num2}'  # БУДУТ ЛИ ТУТ ИЗМЕНЯТЬСЯ ЗНАЧЕНИЯ ПОСЛЕ ЦИКЛА ХЗ
+    while num1 != num2:
+        if num1 > num2:
+            num1 -= num2
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd}'.")
-            print(f"Let's try again, {name}!")
-            break
-    if count == 3:
-        print(f'Congratulations, {name}!')
+            num2 -= num1
+    correct_answer = num1
+    return question, correct_answer
 
 
 if __name__ == '__main__':
