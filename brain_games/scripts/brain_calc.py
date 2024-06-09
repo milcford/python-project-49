@@ -1,23 +1,9 @@
-import random
+from ..engine import run_game
+from ..games import calc
 
 
-def generate_game():
-    print('What is the result of the expression?')  # Это должна быть КОНСТАНТА
-    action = random.choice(['+', '-', '*'])
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
+def main():
+    run_game(calc)
 
-    if action == '+':
-        correct_answer = num1 + num2
-        question = f'{num1} + {num2}'
-    elif action == '-':
-        correct_answer = num1 - num2
-        question = f'{num1} - {num2}'
-    elif action == '*':
-        correct_answer = num1 * num2
-        question = f'{num1} * {num2}'
-    return question, correct_answer
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
