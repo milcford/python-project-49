@@ -3,7 +3,7 @@ import random
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generate_game(question, correct_answer):
+def generate_game():
     num = random.randint(1, 100)
     question = num
     if num % 2 == 0:
