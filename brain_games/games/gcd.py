@@ -14,7 +14,3 @@ def generate_game():
             num2 -= num1
     correct_answer = num1
     return question, correct_answer
-
-
-if __name__ == '__main__':
-    main()

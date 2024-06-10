@@ -19,7 +19,3 @@ def generate_game():
     else:
         correct_answer = 'no'
     return question, correct_answer
-
-
-if __name__ == '__main__':
-    main()

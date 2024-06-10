@@ -18,7 +18,3 @@ def generate_game():
         correct_answer = num1 * num2
         question = f'{num1} * {num2}'
     return question, correct_answer
-
-
-if __name__ == '__main__':
-    main()

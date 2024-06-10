@@ -11,7 +11,3 @@ def generate_game():
     elif num % 2 != 0:
         correct_answer = 'no'
     return question, correct_answer
-
-
-if __name__ == '__main__':
-    main()

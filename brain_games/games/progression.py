@@ -15,7 +15,3 @@ def generate_game():
     question = f'{" ".join(num_list2)}'
     correct_answer = num_list[random_number]
     return question, correct_answer
-
-
-if __name__ == '__main__':
-    main()
