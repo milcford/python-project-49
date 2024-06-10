@@ -3,5 +3,7 @@
 brain-calc
 brain-even
 brain-progression
+brain-gcd
+brain-prime
 /dist/
 __pycache__/
