@@ -4,3 +4,4 @@ brain-calc
 brain-even
 brain-progression
 /dist/
+__pycache__/
